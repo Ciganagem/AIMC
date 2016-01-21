@@ -1,0 +1,16 @@
+********** 12/26/2015 12:50:15 AM **********
+Exception Type: System.Data.SqlClient.SqlException
+Exception: Cannot insert the value NULL into column 'Status', table 'C:\USERS\DANIEL\DOCUMENTS\VISUAL STUDIO 2013\WEBSITES\PW_PROJECTOV2\APP_DATA\DATABASE.MDF.dbo.Voluntario'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+Source: DatabaseManager Class
+Stack Trace: 
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at AIMC.Backend.SQLDatabaseManager.ExecuteNonQuery(String sql) in c:\Users\Daniel\Documents\Visual Studio 2013\WebSites\PW_projectov2\App_Code\DatabaseManager.cs:line 74
+   at AIMC.Backend.SQLDatabaseManager.Insert(String tableName, Dictionary`2 data) in c:\Users\Daniel\Documents\Visual Studio 2013\WebSites\PW_projectov2\App_Code\DatabaseManager.cs:line 170
+
